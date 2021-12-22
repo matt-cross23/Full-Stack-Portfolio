@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <title>Professional Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/main.css">
+</head>
+
+
+<header>
+     <nav class="navbar navbar-expand-md navbar-light" style="background-color: #e3f2fd">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#Heading"> My Portfolio </a>
+   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-item" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#Bio">About me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Contact-Link">Contacts</a>
+        </li>
+      </ul>
+      <span class="navbar-text">
+        "You Only Fail When You Stop Trying!"
+      </span>
+    </div>
+  </div>
+  
+</nav>
+<div class="p-3 mb-2 bg-light text-dark">
+    <h1 id="Heading">
+        Hello! my name is Matthew Cross.
+     </h1>
+         <div id="Developer-img">
+        <img src="./assets/imgs/IMG_5225_Original.jpg"class="rounded mx-auto d-block img-fluid"alt="Matt's img" id="Matt">
+        </div>
+        </div>
+</header>
+<body>
+
+      <section class="Body-container">
+        <section id="Bio">
+        <br>
+            <h2>About me </h2>
+            <div class="container-fluid bg-light text-dark" >
+            <p> I am currently a Front End Developer who is learning Full Stack. I have skills in HTML, CSS, and Javascript which allow me to create, style and add functionality to web applications. This portfolio showcases my work completed and demonstrates the skills I have self-taught and learned through Penn's Full Stack Bootcamp Program.</p>
+            </div>
+            <br>
+        </section>
+        <section id="Projects">
+         <a href="https://zaydnubani.github.io/Penn-Collab-Project-1/" alt="Project-1"><h3> Project 1: Profile Tracker</h3></a>
+         <div class="container-fluid bg-light text-dark d-flex justify-content-center ">
+         <button type="button" class="btn btn-primary btn-sm d-flex " id="btnText" onclick="toggleText()" >Click for details</button>
+            <p id="clickText"> My group members and I created an application that graphs and logs tasks completed based on a user's input. This app allows managers to visualize their team's progress or track your daily habits.</p>
+            </div>
+            <div class="row">
+            <div class="col"><a href="https://matt-cross23.github.io/day-planner/index.html" alt="Project2"><h3>Project 2: Day Planner</h3></a>
+             </div>
+            <div class="col"> <a href="https://matt-cross23.github.io/Weather-Dashboard/index.html" alt="This is my third Project"><h3>Project 3: Weather Dashboard</h3></a>
+            </div>
+            <div class="col"><a href="https://matt-cross23.github.io/Coding-quiz/index.html" alt="This is my fourth Project"><h3>Project 4: Coding Quiz </h3></a>
+            </div>
+ <section id="Contact-Link">
+ <div class="container-fluid bg-light text-dark">
+        <h3 id= "contact-head" class= "justify-content-center"> Contact Me!!</h3>
+        <article>
+            <ul id="Contact-list" class= "justify-content-center">
+            <a href= "https://github.com/matt-cross23"> <li>GitHub</li></a>
+            <a href= "https://www.linkedin.com/in/matthew-cross-/"> <li>Linkedin</li></a>
+            <a href="https://documentcloud.adobe.com/link/review?uri=urn:aaid:scds:US:e81a5954-0413-4472-b2ab-3179cf0ebf11"><li>Resume</li></a>
+             </ul>
+        </article>
+    </div>
+    <script src="./assets/script.js"></script> 
+    </section>
+    </body>
