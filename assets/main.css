@@ -158,4 +158,8 @@ background-color: blue;
       justify-content: center;
       flex-direction: row;
       }
-      }
+}
+
+.origin-top-right{
+  display: none;
+}
