@@ -1,104 +1,114 @@
-
-html{
+html {
   scroll-behavior: smooth;
+}
+body{
+  background-image: url(https://media.gettyimages.com/photos/banana-leaf-in-garden-abstract-green-leaf-picture-id1171730292?b=1&k=20&m=1171730292&s=170667a&w=0&h=9XGLRurYc0jS7vy-ed4lUc1Pa9-roWQDoeh7X83E6Dk=);
+  background-repeat: round; /* Do not repeat the image */
+  background-size: auto;
   }
 
-*{
-  margin: 5px; 
-padding: 5px;
-box-sizing: border-box;
+* {
+  margin: 5px;
+  padding: 5px;
+  box-sizing: border-box;
+  
 }
 
 
 h1 {
-      font-weight: bold;
-      font-size: 35px;
-      margin: 0;
-    }
-ul{
+  font-weight: bold;
+  font-size: 35px;
+  margin: 0;
+}
+
+ul {
   list-style: none;
 }
-    
- #Matt{
-   display: flex;
-   width: 480px;
-   height: 320px;
-   margin: auto;
- }
-  
 
-ul{
-display: inline block;
-padding: 10px, 20px;
-    justify-content: space-around;
-    }
+#Matt {
+  display: flex;
+  width: 480px;
+  height: 320px;
+  margin: auto;
+}
+
+
+ul {
+  display: inline block;
+  padding: 10px, 20px;
+  justify-content: space-around;
+}
 
 
 
 nav {
-text-align: center;
-display: flex;
+  text-align: center;
+  display: flex;
 
-justify-content: space-evenly;
-margin: 20px;
-padding: 5px;
-flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 20px;
+  padding: 5px;
+  flex-wrap: wrap;
 }
 
 
- nav a{
-background-color: #73a3eb;
-font-weight: bold;
-padding: 15px 25px;
-font-size: 15px;
-border-radius: 10px;
-display: inline-block;
-scroll-behavior: smooth;
+nav a {
+  background-color: #73a3eb;
+  font-weight: bold;
+  padding: 15px 25px;
+  font-size: 15px;
+  border-radius: 10px;
+  display: inline-block;
+  scroll-behavior: smooth;
 }
-.nav-link{
+
+.nav-link {
   font-weight: bold;
 }
 
-nav a:hover{
-box-shadow: 0px 0px 100px 0px grey;
+nav a:hover {
+  box-shadow: 0px 0px 100px 0px grey;
 }
 
-h2{
+h2 {
   white-space: break-spaces;
 }
 
-#clickText{
+#clickText {
   display: none;
 }
- 
 
-  img{
 
-    background-size: 250px;
-    display: block;
-    width: 600px;
-    height: 450px;
-    text-decoration: none;
-    cursor: pointer;
-    overflow: hidden;
-    white-space: nowrap;
-    border: tomato 2px solid;
-  }
-  img:hover{
-box-shadow: outset 30px 0 0 25px red;
-  }
-  #Matt:hover{
-    transition: all 1s ease-in-out;
-    transform: rotateY(360deg);
-  }
-  #Project-1{
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
+img {
 
-#contact-head{
+  background-size: 250px;
+  display: block;
+  width: 600px;
+  height: 450px;
+  text-decoration: none;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  border: tomato 2px solid;
+}
+
+img:hover {
+  box-shadow: outset 30px 0 0 25px red;
+}
+
+#Matt:hover {
+  transition: all 1s ease-in-out;
+  transform: rotateY(360deg);
+}
+
+#Project-1 {
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#contact-head {
   display: flex;
   justify-content: center;
   margin: 10px;
@@ -106,60 +116,78 @@ box-shadow: outset 30px 0 0 25px red;
   transform: translateX(17px);
 }
 
-#Contact-list{
-    align-items: baseline;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
-    }
-    
-#Contact-list > a:hover{
-    font-weight: bold;
-    cursor: grab;
-    color: black;
+#Contact-list {
+  align-items: baseline;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
 }
-#btnText:focus{
+
+#Contact-list>a:hover {
+  font-weight: bold;
+  cursor: grab;
+  color: black;
+}
+
+#btnText:focus {
   height: fit-content;
   width: fit-content;
 }
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 583px) {  
+body {
+    width: fit-content;
+    background-color: black;
+  }
 
- @media screen and (max-width: 600px) {
-body{
-columns: 100%;
-background-color: blue;
-}
- img{
+  img {
     width: 100%;
   }
 }
 
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 583px) {...}
 
-@media screen and (max-width: 800px){
-   body{
-     columns: 50%;
-     background-color: white;
-   }
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
+
+
+/* @media screen and (min-width: 712px) {
+  body {
+    columns: 50%;
+    background-color: red;
+  }
 }
+ */
+/* @media screen and (max-width: 980px) {
+  body {
+    padding-bottom: 10px;
+    justify-content: center;
+    background-color: magenta;
+  } */
 
-@media screen and (max-width: 980px) {
-    body{
-      padding-bottom: 10px;
-      justify-content: center;
-    }
   header h1 {
-      width: 100%;
-      text-align: center;
-    }
- 
-    header nav ul {
-      margin-top: 20px;
-      width: 100%;
-      justify-content: center;
-      flex-direction: row;
-      }
-}
+    width: 100%;
+    text-align: center;
+  }
 
-.origin-top-right{
+  header nav ul {
+    width: 100%;
+    justify-content: center;
+    flex-direction: row;
+  }
+}
+#Dropdown{
   display: none;
+  background-color: red;
+}
+#Contact-Link{
+  width: auto
 }
