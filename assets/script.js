@@ -3,6 +3,7 @@ console.log("How are u")
 const displayNav = document.querySelector('#DropDown')
 const navBtn = document.getElementById('user-menu-button');
 
+document.querySelector('.drop').style.display = 'none';
 
 function toggleText() {
   if (displayNav.style.display === "block") {
