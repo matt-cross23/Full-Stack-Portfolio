@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+
 }
 body{
   background-image: url('https://www.freevector.com/uploads/vector/preview/18390/DD-Blue-Sky-Background-02138-Preview.jpg');
@@ -9,7 +10,9 @@ body{
 a{
   text-align: center;
 }
-
+nav{
+  font-family: 'Mochiy Pop P One', sans-serif;
+}
 
 
 h1 {
@@ -249,13 +252,18 @@ animation: spin 3s iteration-count direction fill-mode;
 .footer{
  background-image: url('https://img.freepik.com/free-photo/fertile-loam-soil-suitable-planting-soil-texture-background_38663-327.jpg?size=626&ext=jpg');
 }
-.clouds{
-height: 50px;
-}
+ .clouds{
+position: relative;
+top: 56px;
+transform: scale(1.45);
+height: 125px;
+} 
+
 .clouds + svg{
 display: none;
 position: absolute;
-top: 20px;
+top: 53.5px;
+
 
 }
 
@@ -263,8 +271,4 @@ top: 20px;
   display: block;
   width: auto;
   height: auto;
-}
-.lightning-strike{
-  position: relative;
-  top: 45px;
 }
