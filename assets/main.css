@@ -2,17 +2,14 @@ html {
   scroll-behavior: smooth;
 }
 body{
-  background-image: url(https://media.gettyimages.com/photos/banana-leaf-in-garden-abstract-green-leaf-picture-id1171730292?b=1&k=20&m=1171730292&s=170667a&w=0&h=9XGLRurYc0jS7vy-ed4lUc1Pa9-roWQDoeh7X83E6Dk=);
-  background-repeat: round; /* Do not repeat the image */
+  background-image: url('https://www.freevector.com/uploads/vector/preview/18390/DD-Blue-Sky-Background-02138-Preview.jpg');
+  background-repeat: inherit; 
   background-size: auto;
   }
-
-* {
-  margin: 5px;
-  padding: 5px;
-  box-sizing: border-box;
-  
+a{
+  text-align: center;
 }
+
 
 
 h1 {
@@ -47,15 +44,13 @@ nav {
 
   justify-content: space-evenly;
   margin: 20px;
-  padding: 5px;
   flex-wrap: wrap;
 }
 
 
 nav a {
-  background-color: #73a3eb;
+background-color: white;
   font-weight: bold;
-  padding: 15px 25px;
   font-size: 15px;
   border-radius: 10px;
   display: inline-block;
@@ -79,7 +74,7 @@ h2 {
 }
 
 
-img {
+/* img {
 
   background-size: 250px;
   display: block;
@@ -94,7 +89,7 @@ img {
 
 img:hover {
   box-shadow: outset 30px 0 0 25px red;
-}
+} */
 
 #Matt:hover {
   transition: all 1s ease-in-out;
@@ -159,19 +154,6 @@ body {
 @media only screen and (min-width: 1200px) {...}
 
 
-/* @media screen and (min-width: 712px) {
-  body {
-    columns: 50%;
-    background-color: red;
-  }
-}
- */
-/* @media screen and (max-width: 980px) {
-  body {
-    padding-bottom: 10px;
-    justify-content: center;
-    background-color: magenta;
-  } */
 
   header h1 {
     width: 100%;
@@ -184,10 +166,105 @@ body {
     flex-direction: row;
   }
 }
-#Dropdown{
+.drop{
   display: none;
   background-color: red;
 }
 #Contact-Link{
   width: auto
+}
+
+
+/* 3d animation styling below */
+.stage {
+  perspective: 1500px; 
+    display:flex;
+    justify-content: center;
+    position: relative;
+top: 50px;
+}
+
+.cube {
+width: 100%;
+height: 100px;
+transition: all 10s linear;
+transform-style: preserve-3d;
+position: absolute;
+right:285px;
+top: -90px;
+box-sizing: border-box;
+text-align: center;
+font-family: Times, serif;
+font-size: 18pt;
+animation: spin 3s iteration-count direction fill-mode;
+
+}
+.cube:hover{
+  transform-style: preserve-3d;
+  animation: spin 10s infinite;
+  transform: rotateY(180deg);
+}
+
+.face {
+  position: absolute;
+  top:50px;
+  width: 50px;
+  height: 50px;
+  font-family: 'Permanent Marker', cursive;
+}
+
+.face_1 {
+  background: brown;
+  transform: rotateY(90deg) translateZ(25px);
+  border-radius: 10px;
+}
+.face_2 {
+  background: red;
+  transform: rotateY(180deg) translateZ(25px);
+}
+.face_3 {
+  background: gray;
+  transform: rotateY(270deg) translateZ(25px);
+}
+.face_4 {
+  background-color:#e11d48;
+  transform: rotateY(360deg) translateZ(25px);
+}
+
+.cube { transform: translateZ(180px); 
+  transform: translateX(90);
+  transition: 5s; }
+  
+  :root{
+  --body-bg: #f5f5f5;
+  --card-bg: #e0e0e0;
+  --card-bd-col: #bdbdbd;
+  --text-color:#252525;
+}
+.dark_mode{
+    --body_bg: #000;
+    color: white
+}
+
+.footer{
+ background-image: url('https://img.freepik.com/free-photo/fertile-loam-soil-suitable-planting-soil-texture-background_38663-327.jpg?size=626&ext=jpg');
+}
+.clouds{
+height: 50px;
+}
+.clouds + svg{
+display: none;
+position: absolute;
+top: 20px;
+
+}
+
+.clouds:hover + .lightning-strike{
+  display: block;
+  width: auto;
+  height: auto;
+}
+.lightning-strike{
+  position: relative;
+  top: 45px;
 }
