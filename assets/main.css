@@ -77,23 +77,6 @@ h2 {
 }
 
 
-/* img {
-
-  background-size: 250px;
-  display: block;
-  width: 600px;
-  height: 450px;
-  text-decoration: none;
-  cursor: pointer;
-  overflow: hidden;
-  white-space: nowrap;
-  border: tomato 2px solid;
-}
-
-img:hover {
-  box-shadow: outset 30px 0 0 25px red;
-} */
-
 #Matt:hover {
   transition: all 1s ease-in-out;
   transform: rotateY(360deg);
@@ -143,20 +126,11 @@ body {
     width: 100%;
   }
 }
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 583px) {...}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {...}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {...}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {...}
-
-
+@media only screen and (max-width: 768px) {
+  #button-main{
+    display: none;
+  }
+}
 
   header h1 {
     width: 100%;
@@ -178,13 +152,14 @@ body {
 }
 
 
-/* 3d animation styling below */
+
 .stage {
   perspective: 1500px; 
     display:flex;
     justify-content: center;
     position: relative;
 top: 50px;
+right: 3.5%;
 }
 
 .cube {
@@ -252,12 +227,13 @@ animation: spin 3s iteration-count direction fill-mode;
 .footer{
  background-image: url('https://img.freepik.com/free-photo/fertile-loam-soil-suitable-planting-soil-texture-background_38663-327.jpg?size=626&ext=jpg');
 }
- .clouds{
+.clouds{
+height: 85px;
+transform: scale(2);
 position: relative;
-top: 56px;
-transform: scale(1.45);
-height: 125px;
-} 
+top: 300px;
+}
+
 
 .clouds + svg{
 display: none;
@@ -267,7 +243,12 @@ top: 53.5px;
 
 }
 
-.clouds:hover + .lightning-strike{
+.clouds:hover + .animation{
+  display: block;
+  width: auto;
+  height: auto;
+}
+.cloud-2:hover + .rainbow{
   display: block;
   width: auto;
   height: auto;
