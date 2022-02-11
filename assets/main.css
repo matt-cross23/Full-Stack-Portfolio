@@ -1,19 +1,17 @@
 html {
   scroll-behavior: smooth;
-
 }
-body{
-  background-image: url('https://www.freevector.com/uploads/vector/preview/18390/DD-Blue-Sky-Background-02138-Preview.jpg');
-  background-repeat: inherit; 
+body {
+  background-image: url("https://www.freevector.com/uploads/vector/preview/18390/DD-Blue-Sky-Background-02138-Preview.jpg");
+  background-repeat: inherit;
   background-size: auto;
-  }
-a{
+}
+a {
   text-align: center;
 }
-nav{
-  font-family: 'Mochiy Pop P One', sans-serif;
+nav {
+  font-family: "Mochiy Pop P One", sans-serif;
 }
-
 
 h1 {
   font-weight: bold;
@@ -32,14 +30,11 @@ ul {
   margin: auto;
 }
 
-
 ul {
   display: inline block;
   padding: 10px, 20px;
   justify-content: space-around;
 }
-
-
 
 nav {
   text-align: center;
@@ -50,9 +45,8 @@ nav {
   flex-wrap: wrap;
 }
 
-
 nav a {
-background-color: white;
+  background-color: white;
   font-weight: bold;
   font-size: 15px;
   border-radius: 10px;
@@ -74,12 +68,6 @@ h2 {
 
 #clickText {
   display: none;
-}
-
-
-#Matt:hover {
-  transition: all 1s ease-in-out;
-  transform: rotateY(360deg);
 }
 
 #Project-1 {
@@ -105,7 +93,7 @@ h2 {
   width: 100%;
 }
 
-#Contact-list>a:hover {
+#Contact-list > a:hover {
   font-weight: bold;
   cursor: grab;
   color: black;
@@ -116,8 +104,8 @@ h2 {
   width: fit-content;
 }
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 583px) {  
-body {
+@media only screen and (max-width: 583px) {
+  body {
     width: fit-content;
     background-color: black;
   }
@@ -127,129 +115,142 @@ body {
   }
 }
 @media only screen and (max-width: 768px) {
-  #button-main{
+  #button-main {
     display: none;
   }
 }
 
-  header h1 {
-    width: 100%;
-    text-align: center;
-  }
-
-  header nav ul {
-    width: 100%;
-    justify-content: center;
-    flex-direction: row;
-  }
+header h1 {
+  width: 100%;
+  text-align: center;
 }
-.drop{
+
+header nav ul {
+  width: 100%;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.drop {
   display: none;
   background-color: red;
 }
-#Contact-Link{
-  width: auto
+#Contact-Link {
+  width: auto;
 }
-
-
 
 .stage {
-  perspective: 1500px; 
-    display:flex;
-    justify-content: center;
-    position: relative;
-top: 50px;
-right: 3.5%;
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  margin: 5px;
+  perspective: 100px;
+  perspective-origin: 50% 50%;
+  position: relative;
+  right: 30px;
+}
+.circle .shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    circle at 50% 50%,
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.1) 50%,
+    rgba(0, 0, 0, 0) 50%
+  );
+  transform: rotateX(90deg) translateZ(-150px);
+  z-index: -1;
 }
 
-.cube {
-width: 100%;
-height: 100px;
-transition: all 10s linear;
-transform-style: preserve-3d;
-position: absolute;
-right:285px;
-top: -90px;
-box-sizing: border-box;
-text-align: center;
-font-family: Times, serif;
-font-size: 18pt;
-animation: spin 3s iteration-count direction fill-mode;
-
-}
-.cube:hover{
+.circle:hover {
   transform-style: preserve-3d;
   animation: spin 10s infinite;
-  transform: rotateY(180deg);
+  transform: rotateZ(180deg);
+  cursor: grab;
 }
 
-.face {
-  position: absolute;
-  top:50px;
-  width: 50px;
-  height: 50px;
-  font-family: 'Permanent Marker', cursive;
-}
-
-.face_1 {
-  background: brown;
-  transform: rotateY(90deg) translateZ(25px);
-  border-radius: 10px;
-}
-.face_2 {
-  background: red;
-  transform: rotateY(180deg) translateZ(25px);
-}
-.face_3 {
-  background: gray;
-  transform: rotateY(270deg) translateZ(25px);
-}
-.face_4 {
-  background-color:#e11d48;
-  transform: rotateY(360deg) translateZ(25px);
-}
-
-.cube { transform: translateZ(180px); 
-  transform: translateX(90);
-  transition: 5s; }
-  
-  :root{
+:root {
   --body-bg: #f5f5f5;
   --card-bg: #e0e0e0;
   --card-bd-col: #bdbdbd;
-  --text-color:#252525;
+  --text-color: #252525;
 }
-.dark_mode{
-    --body_bg: #000;
-    color: white
-}
-
-.footer{
- background-image: url('https://img.freepik.com/free-photo/fertile-loam-soil-suitable-planting-soil-texture-background_38663-327.jpg?size=626&ext=jpg');
-}
-.clouds{
-height: 85px;
-transform: scale(2);
-position: relative;
-top: 300px;
+.dark_mode {
+  --body_bg: #000;
+  color: white;
 }
 
-
-.clouds + svg{
-display: none;
-position: absolute;
-top: 53.5px;
-
-
+.footer {
+  background-image: url("https://img.freepik.com/free-photo/fertile-loam-soil-suitable-planting-soil-texture-background_38663-327.jpg?size=626&ext=jpg");
+}
+.clouds {
+  height: 85px;
+  transform: scale(1.5);
+  position: relative;
 }
 
-.clouds:hover + .animation{
+.clouds + svg {
+  display: none;
+  position: relative;
+  bottom: 20px;
+}
+
+.clouds:hover + .animation {
   display: block;
   width: auto;
   height: auto;
 }
-.cloud-2:hover + .rainbow{
+.cloud-2:hover + .rainbow {
   display: block;
   width: auto;
   height: auto;
+}
+
+.circle {
+  display: block;
+  background: black;
+  border-radius: 50%;
+  height: 75px;
+  width: 75px;
+  margin: 0;
+  background: radial-gradient(circle at 25px 25px, #fa8607, #ffff00);
+  animation: spin 3s iteration-count direction fill-mode;
+}
+.circle:before {
+  position: absolute;
+  top: 1%;
+  right: 1px;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at 50% 0px,
+    #ffffff,
+    rgba(236, 214, 14, 0) 58%
+  );
+  filter: blur(1px);
+  z-index: 2;
+}
+.circle:after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  top: -1000px;
+  left: 1000px;
+  filter: blur(0px);
+  opacity: 0.3;
+  background: radial-gradient(
+    circle at 100% 100%,
+    #ffff00,
+    #fed037 10%,
+    #fed099 66%,
+    #fed300 100%
+  );
+}
+
+.home {
+  color: skyblue;
 }
