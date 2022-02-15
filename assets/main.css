@@ -9,7 +9,7 @@ body {
 a {
   text-align: center;
 }
-nav {
+* {
   font-family: "Mochiy Pop P One", sans-serif;
 }
 
@@ -208,6 +208,7 @@ header nav ul {
 }
 
 .circle {
+  animation: rotation 5s infinite linear;
   display: block;
   background: black;
   border-radius: 50%;
@@ -215,7 +216,16 @@ header nav ul {
   width: 75px;
   margin: 0;
   background: radial-gradient(circle at 25px 25px, #fa8607, #ffff00);
-  animation: spin 3s iteration-count direction fill-mode;
+
+  box-shadow: inset -25px -25px 40px orangered;
+  background-image: -webkit-linear-gradient(
+    -45deg,
+    yellow 0%,
+    transparent 100%
+  );
+  background-image: -moz-linear-gradient(-45deg, yellow 0%, transparent 100%);
+  background-image: -o-linear-gradient(-45deg, yellow 0%, transparent 100%);
+  background-image: -ms-linear-gradient(-45deg yellow 0%, transparent 100%);
 }
 .circle:before {
   position: absolute;
@@ -251,6 +261,19 @@ header nav ul {
   );
 }
 
-.home {
-  color: skyblue;
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }
+
+.profile {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Weather_icon_-_full_moon.svg/1200px-Weather_icon_-_full_moon.svg.png);
+}
+li {
+  background: #385683;
+}
+
