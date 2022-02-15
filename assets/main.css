@@ -243,7 +243,6 @@ header nav ul {
   z-index: 2;
 }
 .circle:after {
-  content: "";
   position: absolute;
   border-radius: 50%;
   width: 100%;
