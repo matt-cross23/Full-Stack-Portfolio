@@ -208,7 +208,7 @@ header nav ul {
 }
 
 .circle {
-  animation: rotation 5s infinite linear;
+  animation: rotation 5s infinite ease-in;
   display: block;
   background: black;
   border-radius: 50%;
