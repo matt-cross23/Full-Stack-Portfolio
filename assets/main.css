@@ -18,6 +18,14 @@ h1 {
   font-size: 35px;
   margin: 0;
 }
+h3 {
+  color: black;
+}
+a:link {
+  color: green;
+}
+a:visited {
+}
 
 ul {
   list-style: none;
