@@ -19,7 +19,7 @@
   </head>
   <header>
     <nav
-      class="fixed h-22 bg-gray-900 grid grid-flow-col auto-cols-max"
+      class="fixed h-22 bg-gray-900 grid grid-flow-row"
       id="home"
     >
       <div class="max-w-fit mx-auto sm:px-6 lg:px-8 flex flex-col flex-nowrap">
@@ -34,15 +34,11 @@
           class="absolute inset-y-0 left-0 flex items-center sm:hidden row-auto"
         >
         </div>
-
-        <!-- <div
-          class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start"
-        > -->
         <div
-          class="grid grid-flow-col auto-cols-max gap-8 items-center justify-center sm:items-stretch sm:justify-start"
+          class="items-center justify-center sm:items-stretch sm:justify-start"
         >
           <!-- Start of Clouds Nav-->
-          <div class="cloud-container col-auto ">
+          <div class="cloud-container flex flex-row">
             <svg class="clouds" width="100" height="0">
               <image
                 class="cloud-img"
@@ -288,22 +284,23 @@
       <a
         href="https://zaydnubani.github.io/Penn-Collab-Project-1/"
         alt="Project-1"
+        class ="link"
       >
-        <h3>Project 2: Artistify</h3>
+        <h3 class = "project" id= "proj1"> Project 1: Profile Tracker</h3>
       </a>
       <div
         class="container-fluid  text-dark d-flex justify-content-center w-fit"
       >
         <button
           type="button"
-          class="btn-primary btn-sm"
+          class="btn-primary"
      
           id="btnText"
           onclick="toggleP()"
         >
           Click for details
         </button>
-        <p id="clickText">
+        <p  id="clickText">
           My team members and I designed an application that graphs and stores
           tasks completed based on a user's input. This app allows managers to
           visualize their team's progress or track your daily habits.
@@ -311,24 +308,26 @@
       </div>
       <div class="row">
         <div class="col">
-          <a href="https://artistify-project.herokuapp.com/" alt="Project2">
-            <h3>Project 2: Artistify</h3>
+          <a href="https://artistify-project.herokuapp.com/" alt="Project2" class ="link">
+            <h3 class = "project">Project 2: Artistify</h3>
           </a>
         </div>
         <div class="col">
           <a
-            href="https://matt-cross23.github.io/Weather-Dashboard/index.html"
+            href="https://fast-inlet-52346.herokuapp.com/"
             alt="This is my third Project"
+            class ="link"
           >
-            <h3>Project 3: Weather Dashboard</h3>
+            <h3 class = "project">Project 3: Find Your Wine</h3>
           </a>
         </div>
         <div class="col">
           <a
-            href="https://matt-cross23.github.io/Coding-quiz/index.html"
-            alt="This is my fourth Project"
+            href="https://youtu.be/ktx0y3oLLQo"
+            alt="E-Commerce Backend"
+            class ="link"
           >
-            <h3>Project 4: Coding Quiz</h3>
+            <h3 class = "project">Project 4: E-Commerce Backend</h3>
           </a>
         </div>
       </div>
@@ -377,21 +376,21 @@
     <section id="Contact-Link">
       <div class="soil-container relative top-2 ">
         <div class="container-fluid text-dark footer">
-          <h3 id="contact-head" class="justify-content-center text-gray-900">
+          <h3 id="contact-head" class="justify-content-center text-white">
             Contact Me
           </h3>
           <footer class=''>
             <ul id="Contact-list" class="justify-content-center">
               <a href="https://github.com/matt-cross23" class="link-info">
-                <li class="p-2 text-rose-900">GitHub</li>
+                <li class="p-2 text-white">GitHub</li>
               </a>
               <a href="https://www.linkedin.com/in/matthew-cross-/" class="link-info">
-                <li class="p-2 text-rose-900">Linkedin</li>
+                <li class="p-2 text-white">Linkedin</li>
               </a>
               <a
                 href="https://documentcloud.adobe.com/link/review?uri=urn:aaid:scds:US:e81a5954-0413-4472-b2ab-3179cf0ebf11"
-                class="$pink">
-                <li class="p-2 0">Resume</li>
+                class="link-info ">
+                <li class="p-2 text-white">Resume</li>
               </a>
             </ul>
           </footer>

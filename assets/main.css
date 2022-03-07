@@ -18,14 +18,6 @@ h1 {
   font-size: 35px;
   margin: 0;
 }
-h3 {
-  color: black;
-}
-a:link {
-  color: green;
-}
-a:visited {
-}
 
 ul {
   list-style: none;
@@ -294,9 +286,33 @@ header nav ul {
 #user-menu-button > img:hover {
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>😃</text></svg>")
       16 0,
-    auto; /*!emojicursor.app*/
+    auto;
 }
 
 .footer {
   height: 200px;
+}
+#proj1 {
+  color: #1f3d51;
+  margin-bottom: 50px;
+}
+
+.project {
+  color: #f7e66c;
+}
+.link {
+  text-decoration: underline;
+  color: #53cfda;
+}
+
+.link:hover {
+}
+
+#btnText {
+  position: relative;
+  bottom: 50px;
+}
+
+#clickText {
+  color: white;
 }
