@@ -175,9 +175,9 @@ header nav ul {
   --card-bd-col: #bdbdbd;
   --text-color: #252525;
 }
-.dark_mode {
-  --body_bg: #000;
-  color: white;
+.dark {
+  background-image: url("https://wallpaperaccess.com/full/2113857.jpg");
+  color: #efefef;
 }
 
 .footer {
@@ -298,7 +298,7 @@ header nav ul {
 }
 
 .project {
-  color: #f7e66c;
+  color: black;
 }
 .link {
   text-decoration: underline;
