@@ -81,7 +81,6 @@ h2 {
   justify-content: center;
   margin: 10px;
   padding: 10px;
-  transform: translateX(17px);
 }
 
 #Contact-list {
@@ -174,10 +173,6 @@ header nav ul {
   --card-bg: #e0e0e0;
   --card-bd-col: #bdbdbd;
   --text-color: #252525;
-}
-.dark {
-  background-image: url("https://wallpaperaccess.com/full/2113857.jpg");
-  color: #efefef;
 }
 
 .footer {
@@ -328,3 +323,12 @@ header nav ul {
 .cloud-container {
   padding: 20px;
 }
+
+.dark {
+  background-image: url("https://wallpaperaccess.com/full/2113857.jpg");
+  color: #efefef !important;
+}
+
+/* .light {
+  color: black !important;
+} */
